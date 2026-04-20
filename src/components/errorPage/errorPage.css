@@ -1,0 +1,9 @@
+.error-container {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--color-error);
+}
+
+.error-container h2 {
+  margin-top: 0;
+}

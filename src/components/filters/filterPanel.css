@@ -1,0 +1,88 @@
+.filter-panel {
+  background: var(--color-secondary);
+  border-radius: 8px;
+  padding: 20px;
+  color: white;
+}
+
+.filter-header {
+  margin-bottom: 20px;
+}
+
+.filter-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.filter-section-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filter-section-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-section-item label {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.filter-select-customer,
+.filter-select-month,
+.filter-select-year {
+  padding: 10px 12px;
+  border: 2px solid #999;
+  border-radius: 6px;
+  background-color: white;
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.filter-select-customer:focus,
+.filter-select-month:focus,
+.filter-select-year:focus {
+  outline: none;
+  border-color: white;
+}
+
+.month-filter-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter-select-month,
+.filter-select-year {
+  flex: 1;
+  min-width: 120px;
+}
+
+@media (max-width: 768px) {
+  .filter-panel {
+    padding: 16px;
+  }
+
+  .filter-header h3 {
+    font-size: 16px;
+  }
+
+  .month-filter-row {
+    gap: 8px;
+  }
+
+  .filter-select-month,
+  .filter-select-year {
+    flex: 1;
+    min-width: 100px;
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}

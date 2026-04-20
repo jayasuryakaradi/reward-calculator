@@ -1,0 +1,27 @@
+.rewards-card {
+  background-color: var(--color-secondary);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+   height: 100%;
+}
+
+.rewards-label {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.rewards-value {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+}

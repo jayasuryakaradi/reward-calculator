@@ -1,0 +1,154 @@
+.customers-table-container {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.table-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 2px solid #ddd;
+}
+
+.no-customer-message {
+  text-align: center;
+  padding: 60px 24px;
+  color: #9ca3af;
+}
+
+.no-customer-message p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.no-transactions {
+  text-align: center;
+  padding: 40px 24px;
+  color: #9ca3af;
+}
+
+.no-transactions p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.customers-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.customers-table thead {
+  background-color: #f3f4f6;
+  border: 2px solid #ddd;
+}
+
+.customers-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.customers-table tbody tr {
+  border: 1px solid #ddd;
+}
+
+.customers-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.customers-table td {
+  padding: 14px 16px;
+  color: var(--color-text);
+  font-size: 14px;
+}
+
+.customer-id-cell {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.transaction-id-cell {
+  font-weight: 600;
+  color: var(--color-primary);
+  font-family: 'Courier New', monospace;
+}
+
+.date-cell {
+  color: #999;
+  font-weight: 500;
+}
+
+.amount-cell {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.points-cell {
+  font-weight: 600;
+  color: var(--color-success);
+  font-size: 16px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  padding: 8px 16px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text);
+  min-width: 120px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .customers-table-container {
+    padding: 16px;
+  }
+
+  .customers-table th,
+  .customers-table td {
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+
+  .pagination-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .pagination-btn {
+    width: 100%;
+  }
+}
